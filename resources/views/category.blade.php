@@ -1,16 +1,9 @@
 @extends('layouts.app')
-@section('title', 'Travelblog | Home')
+@section('title', 'Travelblog | Category')
 
 @section('content')
     <main class="container mt-5">
-        @if($auth && $role == 'User' || $role == 'Admin')
-            <h5 class="text-center">Hello {{$name}} !</h5>
-        @endif
-        <h1 class="text-center">All Post</h1>
-        <form action="{{url('/')}}" class="form-inline mx-auto my-4">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search blog title from all category ..." aria-label="Search" style="width: 91%">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <h1 class="text-center">Category</h1>
         <div class="row">
             @foreach($articles as $article)
                 <div class="col">

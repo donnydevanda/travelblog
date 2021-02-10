@@ -3,32 +3,32 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.navbar{
-    color: #fbfbfb;
-}
+/*.navbar{*/
+/*    color: #fbfbfb;*/
+/*}*/
 
-.navbar-light{
-    background-color: #141414;
-}
+/*.navbar-light{*/
+/*    background-color: #141414;*/
+/*}*/
 
-.navbar-brand{
-    font-weight: bold;
-}
+/*.navbar-brand{*/
+/*    font-weight: bold;*/
+/*}*/
 
-.navbar-light .navbar-brand,
-.navbar-light .navbar-text {
-    color: #fbfbfb;
-}
+/*.navbar-light .navbar-brand,*/
+/*.navbar-light .navbar-text {*/
+/*    color: #fbfbfb;*/
+/*}*/
 
-.navbar-light .navbar-nav .nav-link {
-    color: #fbfbfb;
-}
+/*.navbar-light .navbar-nav .nav-link {*/
+/*    color: #fbfbfb;*/
+/*}*/
 
-.navbar-light .nav-item.active .nav-link,
-.navbar-light .nav-item:hover .nav-link {
-    color: #fbfbfb;
-    text-decoration: underline;
-}
+/*.navbar-light .nav-item.active .nav-link,*/
+/*.navbar-light .nav-item:hover .nav-link {*/
+/*    color: #fbfbfb;*/
+/*    text-decoration: underline;*/
+/*}*/
 
 footer{
     background-color: #141414;
