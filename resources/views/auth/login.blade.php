@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.app-auth')
+@section('title', 'Travelblog | Login')
 
 @section('content')
 <div class="container mt-5">

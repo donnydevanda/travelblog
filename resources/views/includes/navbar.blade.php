@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container">
-        <a class="navbar-brand" href="{{url('/')}}">Travelblog</a>
+        <a class="navbar-brand" href="{{url('/')}}"><b>Travelblog</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,6 +18,17 @@
                                 <a class="nav-link" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
                             </li>
 
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Category
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="{{url('/category/1')}}">Mountain</a>
+                                    <a class="dropdown-item" href="{{url('/category/2')}}">Beach</a>
+                                    <a class="dropdown-item" href="{{url('/category/3')}}">City</a>
+                                </div>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{url('/profile')}}">Profile</a>
                             </li>
@@ -29,6 +40,7 @@
                     </div>
                 </ul>
             @endif
+
             @if($auth && $role == 'Admin')
                 <ul class="navbar-nav mr-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +49,10 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link active" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Category
                                 </a>
@@ -52,12 +64,17 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link active" href="{{url('/admin')}}">Admin</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">User</a>
                             </li>
                         </ul>
                     </div>
                 </ul>
             @endif
+
             @if(!$auth)
                 <ul class="navbar-nav mr-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,10 +83,10 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link active active" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Category
                                 </a>
@@ -81,7 +98,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link active" href="#">About Us</a>
                             </li>
                         </ul>
                     </div>

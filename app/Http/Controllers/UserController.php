@@ -10,6 +10,8 @@ class UserController extends Controller
 {
     function index(){
         $auth = Auth::check();
+        $role = 0;
+        $name = 0;
         if ($auth){
             $role = Auth::user()->role;
             $name = Auth::user()->name;
