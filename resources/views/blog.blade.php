@@ -17,7 +17,7 @@
                         @endif
                         @if($role == 'Admin')
                             <th scope="col">Title</th>
-                                <th scope="col">Email</th>
+                            <th scope="col">Category</th>
                             <th scope="col">Action</th>
                         @endif
                     </tr>
@@ -39,7 +39,7 @@
                         @foreach($articles as $article)
                             <tr>
                                 <td class="align-middle">{{$article->title}}</td>
-                                <td class="align-middle">{{$article->users->email}}</td>
+                                <td class="align-middle">{{$article->categories->name}}</td>
                                 <form action="{{url('/blog/delete')}}" method="POST" class="" enctype="multipart/form-data">
                                     {{csrf_field()}}
                                     <input type="hidden" class="form-control" name="id" value="{{$article->id}}"/>

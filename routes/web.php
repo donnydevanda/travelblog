@@ -29,6 +29,8 @@ Route::group(['middleware' => 'role:User'], function(){
 
 Route::group(['middleware' => 'role:Admin'], function(){
     Route::get('/admin', 'ArticleController@blogAdmin')->name("blogAdmin");
+    Route::get('/user', 'UserController@user')->name("user");
+    Route::post('/user/delete', 'UserController@userDelete')->name("userDelete");
 });
 
 Route::get('/', 'ArticleController@index')->name("home");
