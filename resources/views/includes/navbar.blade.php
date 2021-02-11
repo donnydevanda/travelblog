@@ -68,7 +68,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">User</a>
+                                <a class="nav-link active" href="{{url('/profile')}}">User</a>
                             </li>
                         </ul>
                     </div>

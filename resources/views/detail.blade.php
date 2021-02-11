@@ -7,6 +7,6 @@
         <img class="mt-4 mb-3" src="{{asset('storage/'.$article->image)}}" alt="" style="width: 500px; height: 300px">
         <p>Category: {{$article->categories->name}}</p>
         <p class="h5">{{$article->description}}</p>
-        <button class="btn btn-secondary">BACK</button>
+        <a class="h5" href="{{ URL::previous() }}">Back</a>
     </main>
 @endsection
